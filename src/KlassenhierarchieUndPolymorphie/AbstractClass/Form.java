@@ -17,4 +17,12 @@ public abstract class Form {
     }
 
     public abstract int berechneFläche();
+
+
+    @Override
+    public String toString() {
+        return "Form{" +
+                "color='" + color + '\'' +
+                '}';
+    }
 }

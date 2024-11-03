@@ -2,11 +2,11 @@ package ClassObject;
 
 public class Main {
     public static void main(String[] args) {
-        String name =  "Ibrahim";
+        String name = "Ibrahim";
         String name2 = "Ibrahim";
 
-        Student student =  new Student("Adnan", 30);
-        Student student2 = new Student("Adnan", 30);
+        Student student  =  new Student("Adnan", 30);
+        Student student2 =  new Student("Adnan", 30);
 
         // 1. getClass() method is used to get the runtime class of an object.
         System.out.println(name.getClass());
@@ -25,9 +25,12 @@ public class Main {
         System.out.println(student.equals(student2));
 
 
-        if(student instanceof Student){
+        if (student instanceof Student) {
             System.out.println("Student is an instance of Student");
         }
+
+
+        System.out.println(student);
 
     }
 }

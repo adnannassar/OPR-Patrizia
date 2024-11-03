@@ -1,6 +1,5 @@
 package ClassObject;
 
-import java.util.Objects;
 
 public class Student {
     private String name;
@@ -46,5 +45,11 @@ public class Student {
         this.age = age;
     }
 
-
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                '}';
+    }
 }
