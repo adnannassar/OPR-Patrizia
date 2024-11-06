@@ -6,7 +6,6 @@ public class Main {
         Rectangle rectangle = new Rectangle("Blue", 2, 5);
         Circle circle = new Circle("Black", 1);
 
-
         FormVerwaltung formVerwaltung = new FormVerwaltung();
         formVerwaltung.addForm(square);
         formVerwaltung.addForm(rectangle);
