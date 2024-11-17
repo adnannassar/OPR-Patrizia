@@ -1,4 +1,4 @@
-package Klausuren.September_2022;
+package Klausuren.September_2022.Aufgabe_001;
 
 public abstract class Zeichenobjekt {
 

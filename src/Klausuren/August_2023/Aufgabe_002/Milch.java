@@ -1,4 +1,4 @@
-package Klausuren.August_23.Aufgabe_002;
+package Klausuren.August_2023.Aufgabe_002;
 
 public class Milch extends Lebensmittel {
 

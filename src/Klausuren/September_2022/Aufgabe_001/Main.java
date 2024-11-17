@@ -1,4 +1,4 @@
-package Klausuren.September_2022;
+package Klausuren.September_2022.Aufgabe_001;
 
 public class Main {
     public static void main(String[] args) {

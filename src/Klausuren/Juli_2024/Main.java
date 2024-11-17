@@ -1,4 +1,4 @@
-package Klausuren.Juli_24;
+package Klausuren.Juli_2024;
 
 public class Main {
 

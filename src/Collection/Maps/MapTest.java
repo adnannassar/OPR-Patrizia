@@ -1,12 +1,10 @@
 package Collection.Maps;
 
-import Klausuren.August_23.Aufgabe_001.Main;
-
 import java.util.*;
 
 public class MapTest {
     public static void main(String[] args) {
-        Map<String, Float> studentenMap = new HashMap<>();
+        Map<String, Float> studentenMap = new TreeMap<>();
 
         studentenMap.put("Patrizia", 1.3f);
         studentenMap.put("Mehmet", 2.0f);
@@ -23,19 +21,20 @@ public class MapTest {
 
         Collection<Float> values = studentenMap.values();
 
-
         Iterator<String> it = studentenMap.keySet().iterator();
+
         System.out.println("Print with iterator");
         while (it.hasNext()) {
             String key = it.next();
             System.out.println(key + " : " + studentenMap.get(key));
         }
+
         System.out.println("Print with enhanced for loop");
-        for (String key : studentenMap.keySet()) {
-            System.out.println(key + " : " + studentenMap.get(key));
+        Set<String> names = studentenMap.keySet();
+        for (String name : names) {
+            System.out.println(name + " : " + studentenMap.get(name));
         }
 
         System.out.println(values);
-
     }
 }

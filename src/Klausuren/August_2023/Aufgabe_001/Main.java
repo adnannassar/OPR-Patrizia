@@ -1,4 +1,4 @@
-package Klausuren.August_23.Aufgabe_001;
+package Klausuren.August_2023.Aufgabe_001;
 
 public class Main {
 
