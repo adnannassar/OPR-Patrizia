@@ -9,18 +9,21 @@ public class Rechteck {
     public Rechteck(int breite, int laenge) throws IllegalArgumentException {
         if (breite <= 0 || laenge <= 0) {
             throw new IllegalArgumentException("Breite und Laenge muessen groesser als 0 sein");
-        }else{
+        } else {
             this.breite = breite;
             this.laenge = laenge;
         }
     }
 
+    private int flaeche() {
+        return breite * laenge;
+    }
 
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         Rechteck rechteck = (Rechteck) o;
-        return breite == rechteck.breite && laenge == rechteck.laenge;
+        return this.flaeche() == rechteck.flaeche();
     }
 
     @Override
