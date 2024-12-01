@@ -27,11 +27,9 @@ public class Aufgabe_Ereignis {
         Map<Integer, Collection<String>> ereignisseNachJahr = new TreeMap<>();
 
         // Schlüssel (Ereignisnamen) aus der Map abrufen
-        Set<String> ereignisNamen = ereignisseMitJahren.keySet();
-
         // Alle Jahre extrahieren und sortieren
         Set<Integer> alleJahre = new TreeSet<>(ereignisseMitJahren.values());
-
+        Set<String> ereignisNamen = ereignisseMitJahren.keySet();
         for (int jahr : alleJahre) {
             Collection<String> ereignisseInDiesemJahr = new LinkedList<>();
             for (String ereignis : ereignisNamen) {
