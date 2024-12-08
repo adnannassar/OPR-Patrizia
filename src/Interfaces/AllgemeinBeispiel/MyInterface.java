@@ -1,4 +1,4 @@
-package Interfaces;
+package Interfaces.AllgemeinBeispiel;
 
 public interface MyInterface  {
     int x = 10; // default public static final

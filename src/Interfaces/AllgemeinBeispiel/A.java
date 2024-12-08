@@ -1,4 +1,4 @@
-package Interfaces;
+package Interfaces.AllgemeinBeispiel;
 
 public class A {
 

@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Flugportal {
     private List<Flug> flüge;
-    private Protokollierer protokollierer;
+    private Protokollierer protokollierer; // null
 
     public Flugportal() {
         this.flüge = new ArrayList<>();
@@ -22,7 +22,7 @@ public class Flugportal {
     public List<Flug> sucheDirektfluege(String start, String ziel) {
         List<Flug> verbindungen = new ArrayList<>();
         for (Flug flug : flüge) {
-            if (protokollierer.filter(flug.start, flug.ziel, flug.IstDirektflug)) {
+            if (this.protokollierer.filter(flug.start, flug.ziel, flug.IstDirektflug)) {
                 verbindungen.add(flug);
             }
         }

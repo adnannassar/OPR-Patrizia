@@ -1,4 +1,4 @@
-package Interfaces;
+package Interfaces.AllgemeinBeispiel;
 
 public class C extends B implements MyInterface, MyInterface2 {
 

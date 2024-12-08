@@ -1,6 +1,6 @@
 package Klausuren.Klusur_12_07_2021.Aufgabe_009.MitInterface;
 
-public class WunschzielFilter implements Protokollierer{
+public class WunschzielFilter implements Protokollierer {
 
     private String wunschzielOrt;
 

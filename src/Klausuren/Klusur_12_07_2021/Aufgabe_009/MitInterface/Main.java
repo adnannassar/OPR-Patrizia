@@ -9,15 +9,14 @@ public class Main {
 
         DortmundFilter dortmudFilter = new DortmundFilter();
 
-
         WunschzielFilter wunschzielFilter = new WunschzielFilter("Köln");
+
         //TODO
         // PriseFilter priseFilter = new PriseFilter(200.0, 300.0);
         // PriseAndDWünschziel priseAndDWünschziel = new PriseAndDWünschziel(200.0, 300.0, start, ziel);
 
         Flugportal flugportal = new Flugportal();
-        flugportal.setProtokollierer(wunschzielFilter);
-
+        flugportal.setProtokollierer(hirschbergFilter);
 
         flugportal.addFlug(new Flug("Berlin", "Hirschberg", 150.0, false, "127", "Lufthansa"));
         flugportal.addFlug(new Flug("München", "Frankfurt", 350.0, false, "128", "Air France"));
@@ -34,7 +33,6 @@ public class Main {
         flugportal.addFlug(new Flug("Frankfurt", "Stuttgart", 280.0, false, "139", "Fly Emirates"));
         flugportal.addFlug(new Flug("Köln", "Frankfurt", 260.0, true, "140", "Air France"));
         flugportal.addFlug(new Flug("Hamburg", "Düsseldorf", 190.0, false, "141", "Lufthansa"));
-
 
         //TODO
         // Alle Flüge müsse nach preis aufsteigend sortiert werden

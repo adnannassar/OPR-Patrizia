@@ -1,4 +1,4 @@
-package Interfaces;
+package Interfaces.AllgemeinBeispiel;
 
 public abstract class B extends A {
     public B(int value) {
