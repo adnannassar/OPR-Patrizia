@@ -1,4 +1,4 @@
-package Klausuren.Januar_2024.Aufgabe_007;
+package Klausuren.Juli_2024.Aufgabe_007;
 
 import java.util.Comparator;
 import java.util.Set;
