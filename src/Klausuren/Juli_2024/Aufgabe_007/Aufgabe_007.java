@@ -1,6 +1,7 @@
 package Klausuren.Juli_2024.Aufgabe_007;
 
 import java.util.Comparator;
+import java.util.Scanner;
 import java.util.Set;
 import java.util.TreeSet;
 
