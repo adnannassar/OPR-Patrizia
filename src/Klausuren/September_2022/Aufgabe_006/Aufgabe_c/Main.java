@@ -1,5 +1,7 @@
 package Klausuren.September_2022.Aufgabe_006.Aufgabe_c;
 
+import AnonymClass.Student;
+
 import java.util.List;
 import java.util.Optional;
 
