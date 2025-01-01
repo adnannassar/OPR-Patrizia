@@ -1,8 +1,13 @@
 package Klausuren.September_2022.Aufgabe_007;
 
+import org.junit.Test;
+
 import java.io.*;
 
-public class Main {
+import static org.junit.Assert.assertTrue;
+
+public class Aufgabe_007 {
+
     public static void main(String[] args) {
 
         try {
@@ -14,7 +19,7 @@ public class Main {
         }
     }
 
-
+    
     public static boolean hatMindestlaenge(InputStream is, long mindestLaenge) throws IOException {
         if (is == null || mindestLaenge < 0) {
             throw new IllegalArgumentException("Mindestlaenge ist kleiner als 0");
@@ -27,5 +32,22 @@ public class Main {
             counter++;
         }
         return counter >= mindestLaenge;
+    }
+
+    @Test
+    public void testHatMindestLaengeLiefertTrue() throws IOException {
+        // Arrange
+        String path = "IO_Files/test.txt";
+        FileInputStream fis = new FileInputStream(path);
+
+        // Act
+        boolean result = hatMindestlaenge(fis, 6);
+
+        // Assert
+        assertTrue(result);
+
+
+        // OR
+        //  assertTrue(hatMindestlaenge(new FileInputStream("IO_Files/test.txt"), 6));
     }
 }
